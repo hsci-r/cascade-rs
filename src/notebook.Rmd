@@ -8,9 +8,9 @@ output: html_notebook
 library(arrow)
 library(tidyverse)
 library(here)
-corpus <- open_dataset(here("eetu/data/corpus.parquet")) |> to_duckdb()
-metadata <- open_dataset(here("eetu/data/corpus_meta.parquet")) |> to_duckdb()
-inferred <- open_dataset(here("eetu/data/corpus_inferred.parquet")) |> to_duckdb()
+corpus <- open_dataset(here("data/corpus.parquet")) |> to_duckdb()
+metadata <- open_dataset(here("data/corpus_meta.parquet")) |> to_duckdb()
+inferred <- open_dataset(here("data/corpus_inferred.parquet")) |> to_duckdb()
 ```
 
 
